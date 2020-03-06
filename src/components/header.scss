@@ -28,8 +28,13 @@
   border-radius: 10px;
   outline: none;
   cursor: pointer;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-
+.Header button:hover {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.25);
+  transform: translateY(-3px);
+}
 @media (max-width: 640px) {
   .Header {
     padding: 15px 0;
